@@ -1,26 +1,3 @@
-# devfolio
-A simple, responsive, single-page portfolio and resume for developers built with Bulma, Sass, Font Awesome and Flickity.
-
-View the [demo here](https://mmacneil.github.io/devfolio/).
-
-### Desktop version
-<img src="https://github.com/mmacneil/devfolio/blob/master/docs/devfolio-desktop.gif" />
-
-### Responsive version
-<img src="https://github.com/mmacneil/devfolio/blob/master/docs/devfolio-responsive.gif" height="485" />
-
-## Setup
-
-1. Clone, fork or create a template from this repository.
-2. Install required dependencies from your terminal by running `npm install` from the project folder root containing `package.json`.
- <pre>
- <code>src\>npm install</code></pre>
-3. Use webpack to compile and bundle the css/js by running `npm run build` from the project folder root containing `webpack.config.js`.  Webpack will also begin watching these files for changes and re-build as they're modified.  The compiled assets will be output directly to the repository root so they can be published directly (for example via GitHub Pages).
- <pre>
- <code>src\>npm run build</code></pre>
- 4. Open `index.html` locally in your favorite browser or serve the repository root with your preferred static file host.
- 5. Modify accordingly - styles, colors and variables can be changed in `styles.scss`.  Refer to the Bulma docs for guidance on how to quickly customize further to suit your tastes using  [color helpers](https://bulma.io/documentation/modifiers/color-helpers/) and [variables](https://bulma.io/documentation/customize/variables/).  See the [Flickity](https://github.com/metafizzy/flickity) docs if you wish to modify the carousel.
- 
- ## Contact
- markmacneil@gmail.com
- 
+大多數使用 Codex 完成，但有遇到兩個問題：
+1. 本來想傳履歷的 pdf 讓 AI 讀取後幫我改內容，但 codex 不吃圖檔以外的檔案，給 cakeresume 的履歷連結也讀不到，後來是自己複製履歷的文字內容直接貼在對話框讓 AI 去修改
+2. 上傳了頭像要求修改，我不確定 codex 這邊處理的怎麼樣，但要從 codex 發 PR 的時候會報錯顯示 “不支援二進位格式檔案”，所以頭像圖檔我是手動處理的
